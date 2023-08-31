@@ -6,11 +6,15 @@
 function elevarAlCuadrado(num) {
    // Retorna el valor de "num" elevado al cuadrado.
     return Math.pow ( num, 2);
+
+   //  return num ** 2;
 }
 
 function elevarAlCubo(num) {
    // Retorna el valor de "num" elevado al cubo.
      return Math.pow( num, 3);
+
+   //   return num ** 3;
 }
              
 function elevar(num, exponent) {

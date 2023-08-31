@@ -31,17 +31,17 @@ function conection(status) {
       case 1:
          return "Online";
 
-         break;
+         // break;
 
       case 2:
          return "Away";
 
-         break;
+         // break;
 
       default:
          return "Offline";
 
-         break;
+         // break;
    }
 }
 
@@ -55,7 +55,7 @@ function saludo(idioma) {
    switch (idioma) {
       case "aleman":
          return "Guten Tag!";
-         break;
+         // break;
       case "mandarin":
          return "Ni Hao!";
       case "ingles":
@@ -63,7 +63,7 @@ function saludo(idioma) {
 
       default:
          return "Hola!";
-         break;
+         // break;
    }
 }
 
@@ -194,14 +194,17 @@ function esPrimo(num) {
    // Tu código:
    if (num <= 1) {
       return false;
-   }
-   for (let i = 2; i <= Math.sqrt(num); i++) {
+    }
+  
+    for (var i = 2; i < num; i++) {
       if (num % i === 0) {
-         return false;
+        return false; 
       }
-   }
-   return true;
-}
+    }
+  
+    return true; 
+  }
+
 
 
 function esVerdadero(valor) {

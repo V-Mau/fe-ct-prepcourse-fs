@@ -38,12 +38,12 @@ function obtenerSaludo(nombre) {
    // Ejemplo: "Martin" ---> "Hola Martin!"
    
    //  return `Hola ${nombre}!`; 
-   return "Hola" + " " + nombre+ "!";
+   return "Hola" + " " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
-     return altura * ancho;
+     return alto * ancho;
 }
 
 function retornarPerimetro(lado) {
@@ -67,6 +67,8 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu codigo .
+
+   
    
    if( letra === "a" ||letra === "e" || letra === "i" || letra === "o" || letra === "u" ) {
       return "Es vocal"

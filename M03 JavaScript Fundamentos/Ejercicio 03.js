@@ -11,16 +11,20 @@ function sonIguales(x, y) {
    }
       
 }
+// console.log(sonIguales(4,5));
 
 function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
-   if ( str1 === str2) {
+   if ( str1.length === str2.length) {
       return true ;
    } else {
       return false ;
    }
 }
+
+// console.log(tienenMismaLongitud('auri','mau'));
+
 
 function menosQueNoventa(num) {
    // Retorna true si el argumento "num" es menor que noventa.
@@ -61,9 +65,9 @@ function esImpar(num) {
    // Retorna true si "num" es impar.
    // De lo contrario, retorna false.
    if ( num % 2 !== 0) {
-      return(true);
+      return true ;
    } else {
-      return(false);
+      return false ;
    }
 }
 
