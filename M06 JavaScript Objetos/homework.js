@@ -105,11 +105,16 @@ function verificarPassword(objetoUsuario, password) {
   // En ese caso retornar true. Caso contrario, false.
   // Tu código:
   // return objetoUsuario.password === password ;
-  var usuarioPassword = objetoUsuario.password ;
-  if( usuarioPassword === password) return true;
-  else {
-    return false;
-  }
+  // var usuarioPassword = objetoUsuario.password ;
+  // if( usuarioPassword === password) return true;
+  // else {
+  //   return false;
+  // }
+  // ? Opcion 2:
+  if(objetoUsuario.password === password) return true;
+  else return false;
+  // ? opcion 3 :
+  // return objetoUsuario.password === password 
 }
 
 function actualizarPassword(objetoUsuario, nuevaPassword) {
@@ -128,8 +133,11 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
   // Retornar el objeto.
   // Tu código:
   objetoUsuario["amigos"] = [nuevoAmigo]
+
   // objetoUsuario.amigos.push(nuevoAmigo);
+
   return objetoUsuario;
+
 }
 
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
@@ -144,6 +152,13 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
     
    });
   return objetoMuchosUsuarios;
+  //  Opcion 2:
+  // for( var i = 0; i < objetoMuchosUsuarios.length; i++) {
+
+  //   objetoMuchosUsuarios[i].esPremium = true;
+  // }
+  // return objetoMuchosUsuarios;
+//opcion 3: 
 
 //   objetoMuchosUsuarios.map(function(usuario){
 
@@ -185,14 +200,22 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   // PorcentajeDeDescuento ---> 0.2
   // Precio final ---> 8
   // Tu código:
+  // objetoProducto.calcularPrecioDescuento = function() {
+
+  //    var descuento = objetoProducto.precio * objetoProducto.porcentajeDeDescuento ;
+  //    var precioFinal = objetoProducto.precio - descuento 
+  //    return precioFinal ;
+    
+    
+  // }
+  // return objetoProducto ;
+
+  // Opcion 2:
   objetoProducto.calcularPrecioDescuento = function() {
 
-    var descuento = objetoProducto.precio * objetoProducto.porcentajeDeDescuento ;
-    var precioFinal = objetoProducto.precio - descuento 
-    return precioFinal ;
-    
+    return this.precio - (this.precio * this.porcentajeDeDescuento)
   }
-  return objetoProducto ;
+  return objetoProducto;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
